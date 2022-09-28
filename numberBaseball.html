@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<htmll>
+    <head>
+        <meta charset="utf-8">
+        <script type="text/javascript" src="numberBaseball.js">
+
+        onmouseover = function() {
+            this.style.color = 'red';
+        };
+
+        onmouseout = function() {
+            this.style.color = 'black';
+        };
+
+        </script>
+
+        <style>
+            header {
+                background-color: #666;
+                padding: 30px;
+                text-align: center;
+                font-size: 35px;
+                color: white;
+              }
+
+            nav {
+                float: left;
+                width: 100%;
+                height: 80px; /* only for demonstration, should be removed */
+                background: #ccc;
+                padding-block: 10px;
+            }
+
+            article {
+                float: left;
+                background-color: #f1f1f1;
+                width: 100%;
+                height: 300px; /* only for demonstration, should be removed */
+                padding-block: 30px;
+            }
+
+            footer {
+                float: left;
+                background-color: #777;
+                text-align: center;
+                color: white;
+                width: 100%;
+
+                height: 100px;
+            }
+
+            input{
+                width: 50px;
+                margin: 30px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <h2>! Number Baseball !</h2>
+        </header>
+
+        <nav>
+            <div type="text" id="start" style="cursor:pointer" onclick="Start()">1. Start</div>
+            <div type="text" id="reset" onclick="Reset()"  style="cursor:pointer" >2. Reset</div>
+        </nav>
+
+        <article>
+            <input type="text" id="nb1" name="" maxlength="1" />
+            <input type="text" id="nb2" name="" maxlength="1" />
+            <input type="text" id="nb3" name="" maxlength="1" />
+            <br>
+            <br>
+            <div style="float: bottom">
+                <input type="button" onclick="input()" value="Try !" />
+            </div>
+        </article>
+
+        <footer>
+            <label id="lblResult"> 0S 0B 0O </label>
+        </footer>
+
+    </body>
+</htmll>
