@@ -29,7 +29,7 @@
             }
 
             .tg .tg-3l6d{
-                font-family:"Comic Sans MS", cursive, sans-serif !important;font-size:20px;text-align:center;vertical-align:top;font-weight: bolder;
+                font-family:"Comic Sans MS", cursive, sans-serif !important;color:beige; font-size:20px;text-align:center;vertical-align:top;font-weight: bolder;
             }
 
             body{
@@ -92,26 +92,26 @@
         </nav>
 
         <article>
-            <label id="lblSelectedDay"> Selected day </label>
-            <br>
-            <label id="lblCurrentDate"> Current date </label>
-            <br>
+            <label id="lblSelectedDay" style="color:aqua; font-size: 22px; font-weight: bolder; border-width: 2px; border-color: wheat;" > Selected day </label>
+            <br><br>
+            <label id="lblCurrentDate" style="color:aliceblue; font-size: 30px; font-weight: bolder;"> Current date </label>
+            <br><br>
             <table>
                 <tr>
                     <td>
-                        <text id="Prev" onclick="PrevMonth()"> << </text>
+                        <text id="Prev" style="color:yellow; font-size: 20px;" onclick="PrevMonth()"> << </text>
                     </td>
                     <td>
                     <table class="tg" id="calendar">
                         <thead>
                         <tr>
+                            <th class="tg-3l6d">sun</th>
                             <th class="tg-3l6d">mon</th>
                             <th class="tg-3l6d">tue</th>
                             <th class="tg-3l6d">wed</th>
                             <th class="tg-3l6d">thu</th>
                             <th class="tg-3l6d">fri</th>
                             <th class="tg-3l6d">sat</th>
-                            <th class="tg-3l6d">sun</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -160,11 +160,20 @@
                             <td class="tg-3l6d" id="34"></td>
                             <td class="tg-3l6d" id="35"></td>
                         </tr>
+                        <tr>
+                            <td class="tg-3l6d" id="36"></td>
+                            <td class="tg-3l6d" id="37"></td>
+                            <td class="tg-3l6d" id="38"></td>
+                            <td class="tg-3l6d" id="39"></td>
+                            <td class="tg-3l6d" id="40"></td>
+                            <td class="tg-3l6d" id="41"></td>
+                            <td class="tg-3l6d" id="42"></td>
+                        </tr>
                         </tbody>
                         </table>
                     </td>
                     <td>
-                        <text id="Next" onclick="NextMonth()"> >> </text>
+                        <text id="Next" style="color:yellow; font-size: 20px;" onclick="NextMonth()"> >> </text>
                     </td>
                 </tr>
             </table>
