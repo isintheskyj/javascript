@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<htmll>
+    <head>
+        <meta charset="utf-8">
+        <script type="text/javascript" src="simple_Calendar.js">
+
+        </script>
+
+        <style>
+
+            table {
+                margin: auto;
+            }
+
+            .tg  {
+                border-collapse:collapse;border-spacing:0;
+                text-align: center;
+                margin: auto;
+            }
+
+            .tg td{
+                border-color:red;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+            overflow:hidden;padding:10px 5px;word-break:normal;
+            }
+
+            .tg th{
+                border-color:red;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+            font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;
+            }
+
+            .tg .tg-3l6d{
+                font-family:"Comic Sans MS", cursive, sans-serif !important;font-size:20px;text-align:center;vertical-align:top;font-weight: bolder;
+            }
+
+            body{
+                background-image: url(res/bg.jpg);
+                background-attachment: fixed;
+                background-size:cover;
+            }
+
+            header {
+                background-color: transparent;
+                padding: 30px;
+                text-align: center;
+                font-size: 35px;
+                color: white;
+              }
+
+            nav {
+                width: 100%;
+                height: 80px; /* only for demonstration, should be removed */
+                background: transparent;
+                padding-block: 10px;
+                font-family:"Comic Sans MS", cursive, Verdana, !important;font-size:30px;text-align:center; vertical-align:top;
+                color: yellow;
+
+    /*            text-shadow: -1px 0 gray, 0 1px gray, 1px 0 gray, 0 -1px gray;  */
+            }
+
+            article {
+                text-align: center;
+                background-color: transparent;
+                width: 100%;
+                height: 300px; /* only for demonstration, should be removed */
+                padding-block: 30px;
+            }
+
+            footer {
+                float: left;
+                background-color: transparent;
+                text-align: center;
+                color: white;
+                width: 100%;
+                height: 100px;
+            }
+
+            input{
+                width: 50px;
+                margin: 30px;
+            }
+
+        </style>
+    </head>
+
+    <body onload="initialize()">
+        <header>
+            <h2>Simple Calendar.</h2>
+        </header>
+
+        <nav>
+            <label id="lblToday"> today  </label>
+        </nav>
+
+        <article>
+            <label id="lblSelectedDay"> Selected day </label>
+            <br>
+            <label id="lblCurrentDate"> Current date </label>
+            <br>
+            <table>
+                <tr>
+                    <td>
+                        <text id="Prev" onclick="PrevMonth()"> << </text>
+                    </td>
+                    <td>
+                    <table class="tg" id="calendar">
+                        <thead>
+                        <tr>
+                            <th class="tg-3l6d">mon</th>
+                            <th class="tg-3l6d">tue</th>
+                            <th class="tg-3l6d">wed</th>
+                            <th class="tg-3l6d">thu</th>
+                            <th class="tg-3l6d">fri</th>
+                            <th class="tg-3l6d">sat</th>
+                            <th class="tg-3l6d">sun</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td class="tg-3l6d" id="1"></td>
+                            <td class="tg-3l6d" id="2"></td>
+                            <td class="tg-3l6d" id="3"></td>
+                            <td class="tg-3l6d" id="4"></td>
+                            <td class="tg-3l6d" id="5"></td>
+                            <td class="tg-3l6d" id="6"></td>
+                            <td class="tg-3l6d" id="7"></td>
+                        </tr>
+                        <tr>
+                            <td class="tg-3l6d" id="8"></td>
+                            <td class="tg-3l6d" id="9"></td>
+                            <td class="tg-3l6d" id="10"></td>
+                            <td class="tg-3l6d" id="11"></td>
+                            <td class="tg-3l6d" id="12"></td>
+                            <td class="tg-3l6d" id="13"></td>
+                            <td class="tg-3l6d" id="14"></td>
+                        </tr>
+                        <tr>
+                            <td class="tg-3l6d" id="15"></td>
+                            <td class="tg-3l6d" id="16"></td>
+                            <td class="tg-3l6d" id="17"></td>
+                            <td class="tg-3l6d" id="18"></td>
+                            <td class="tg-3l6d" id="19"></td>
+                            <td class="tg-3l6d" id="20"></td>
+                            <td class="tg-3l6d" id="21"></td>
+                        </tr>
+                        <tr>
+                            <td class="tg-3l6d" id="22"></td>
+                            <td class="tg-3l6d" id="23"></td>
+                            <td class="tg-3l6d" id="24"></td>
+                            <td class="tg-3l6d" id="25"></td>
+                            <td class="tg-3l6d" id="26"></td>
+                            <td class="tg-3l6d" id="27"></td>
+                            <td class="tg-3l6d" id="28"></td>
+                        </tr>
+                        <tr>
+                            <td class="tg-3l6d" id="29"></td>
+                            <td class="tg-3l6d" id="30"></td>
+                            <td class="tg-3l6d" id="31"></td>
+                            <td class="tg-3l6d" id="32"></td>
+                            <td class="tg-3l6d" id="33"></td>
+                            <td class="tg-3l6d" id="34"></td>
+                            <td class="tg-3l6d" id="35"></td>
+                        </tr>
+                        </tbody>
+                        </table>
+                    </td>
+                    <td>
+                        <text id="Next" onclick="NextMonth()"> >> </text>
+                    </td>
+                </tr>
+            </table>
+        </article>
+
+        <footer>
+            <label id="lblResult"> </label>
+        </footer>
+
+    </body>
+</htmll>
