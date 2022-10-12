@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Noto+Sans+KR:wght@700&display=swap');
+
+h1{
+    font-family: 'Mochiy Pop P One';
+}
+
+h2 {
+    color: red;
+  }
+
+h3 {
+    color: darkorange;
+  }
+
+#winnerlist > li {
+    font-weight: bolder;
+}
+
+body{
+    margin: 50px;
+}
+
+.category{
+    font-size: 20px;
+}
+
+.listitem{
+    font-size: medium;
+}
+
+p, i{
+    background-color: lemonchiffon;
+}
