@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Noto+Sans+KR:wght@700&display=swap');
+
+h1{
+    font-family: 'Mochiy Pop P One';
+}
+
+h2 {
+    color: black;
+    text-align: center;
+  }
+
+h3 {
+    color: darkorange;
+  }
+
+body{
+      margin: 50px;
+      align-items: center;;
+  }
+
+footer{
+    background-color: bisque;
+  }
+
+#winnerlist > li {
+    font-weight: bolder;
+}
+
+.main_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow:hidden;
+    width:400px;
+    height:400px;
+}
+
+.main_box img{
+    flex-shrink: 0;
+    width: 80%;
+    height: 80%;
+}
+
+.container {
+    width: 600px;
+    margin: 0 auto;
+    display: flex;
+  }
+
+.container ul{
+    background-color: bisque;
+    color: black;
+    border-radius: 10px;
+}
+
+.container p {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+.container p, ul {
+    flex: 1;
+    text-align: left;
+  }
+
+.list{
+    margin-left: 200px;
+}
+
+.foot{
+    width: 800px;
+    height: 200px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.category{
+    font-size: 20px;
+}
+
+.listitem{
+    font-size: medium;
+}
